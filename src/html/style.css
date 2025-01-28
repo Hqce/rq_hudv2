@@ -1,0 +1,150 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+
+#ui {
+	display: none;
+}
+
+.playerStats{
+	position: absolute;
+	left: 80.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 12px; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+}
+
+.carStats{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+.jobs{
+	display: inline-block;
+}
+
+.stat{
+	color: #fff;
+	width: auto;
+	height: 33px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 7px;
+	background-color: rgba(51, 51, 51, 0.7);
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom: 3px solid #fff;
+	min-width: 50px;
+	margin-right: 20px;
+}
+
+.stat .icon{
+	height: 33px;
+	width: 34px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	position: relative;
+	display: inline-block;
+	border-bottom: 3px solid #fff;
+	right: 15px;
+}
+
+.stat .icon img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 18px;
+	width: 18px;
+	transform: translate(-50%, -50%);
+}
+
+.stat span{
+	position: relative;
+	top: -38%;
+	transform: translateY(-75%);
+	margin-left: -5px;
+	width: auto;
+	padding-right: 10px;
+}
+
+
+
+.carStats .stat{
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	text-align: right;
+}
+
+.carStats .stat .icon{
+	float: right;
+	right: 0px;
+	left: 15px;
+}
+
+.carStats .stat span{
+	white-space: nowrap;
+	right: 20px;
+}
+
+.status{
+	display: flex;
+	width: 195px;
+	position: relative;
+	left: -15px;
+	justify-content: space-between;
+	margin-top: -4px;
+}
+
+.veh-gas{
+	display: flex;
+	width: 235px;
+	position: relative;
+	right: -15px;
+	justify-content: space-between;
+}
+
+.vert-stat{
+	width: 40px;
+	height: 48px;
+	position: relative;
+	overflow: hidden;
+}
+
+.vert-stat .bg{
+	height: 12%;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+}
+.vert-stat div {
+	border-radius: 20px;
+}
+
+.vert-stat img{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+}
+
+#gas{
+	position: absolute;
+	right: 100px;
+	bottom: 50px;
+
+}
+#voicebg {
+	background: #fff;
+}
+#waterbg {
+	background: #fff;
+}
+#hungerbg {
+	background: #fff;
+}
